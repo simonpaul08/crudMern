@@ -1,54 +1,65 @@
 
 const { Router } = require('express')
+const Test = require('../model/testModel')
 
 const router = Router()
 
-const members = [
-    {
-        name: "Max",
-        id: 22
-    }, 
-    {
-        name: 'Alex',
-        id: 28
-    }
-]
 
-router.get('/', (req, res) => {
-    res.send(members)
+// get all
+router.get('/', async(req, res) => {
+    try{
+        const testItem = await Test.find({})
+        res.send(testItem)
+    }catch(e){
+        console.error(e)
+    }
 })
+
 
 // create
 router.post('/add', (req, res) => {
-    const item = req.body
-    members.push(item)
-    res.send(members)
+    try {
+        const item = Test.create(req.body)
+        res.send(item)
+    }catch(e) {
+        console.error(e)
+    }
+
 })
 
 // read
-router.post('/:id', (req, res) => {
-    const {id} = req.params
-    const memb = members.find(m => m.id === parseInt(id))
-    if(memb){
-        res.send(memb);
-    }else {
-        res.send('member not available in the db');
+router.get('/:id', async (req, res) => {
+
+    try{
+        const {id} = req.params
+        const testItem = await Test.find({ chapter: id })
+        res.send(testItem)
+    }catch(e) {
+        console.error(e)
     }
+
 })
 
 // update
-router.put('/update', (req, res) => {
-    const { id } = req.body
-    const memb = members.find(m => m.id === id)
-
-    if(memb){
-        memb.name = req.body.name
-        res.send(memb)
-    }else {
-        res.send('member not available in the db')
+router.put('/update', async (req, res) => {
+    try {
+        const { chapter, timelimit } = req.body
+        const testItem = await Test.updateOne({ chapter: chapter }, { timelimit: timelimit })
+        res.send(testItem)
+    }catch(e) {
+        console.error(e)
     }
 })
 
 // delete 
+
+router.delete('/delete', async(req, res) => {
+    try {
+        const { chapter } = req.body
+        const testItem = await Test.deleteOne({ chapter: chapter })
+    }catch(e) {
+        console.error(e)
+    }
+})
 
 module.exports = router;

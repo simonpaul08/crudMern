@@ -1,12 +1,18 @@
 
 const mongoose = require('mongoose')
-const mongoURI = 'mongodb+srv://pawan:mint@cluster0.lbmywk1.mongodb.net/?retryWrites=true&w=majority'
+require('dotenv').config()
+const mongoURI = process.env.MONGO_URI
+
 
 mongoose.set('strictQuery', false);
-const connectToMongo = () => {
-    mongoose.connect(mongoURI, () => {
-        console.log('connected to mongodb')
-    })
+const connectToMongo = async () => {
+    try {
+        const conn = await mongoose.connect(mongoURI)
+        console.log(conn.connection.host)
+    } catch(error) {
+        console.log(error)
+    }
+
 }
 
 module.exports = connectToMongo
