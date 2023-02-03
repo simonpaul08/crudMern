@@ -5,7 +5,13 @@ const app = express()
 mongo()
 const cors = require('cors')
 
-app.use(cors({ origin: '*' }))
+var corsOptions = {
+    origin: '*',
+    optionsSuccessStatus: 200
+}
+app.use(cors(corsOptions));
+
+
 app.use(express.json())
 
 // routes 
