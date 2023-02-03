@@ -32,7 +32,7 @@ router.get('/:id', async (req, res) => {
 
     try{
         const {id} = req.params
-        const testItem = await Test.find({ chapter: id })
+        const testItem = await Test.find({ _id: id })
         res.send(testItem)
     }catch(e) {
         console.error(e)
