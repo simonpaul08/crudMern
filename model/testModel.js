@@ -2,14 +2,32 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose
 
 const questionSchema = new Schema({
-    question: {
-        type: String,
-        required: true
-    },
-    choice: [{
-        type: String,
-        required: true
-    }],
+    choice: [
+        {
+            choice1: {
+                type: String,
+                required: true
+            }
+        },
+        {
+            choice2: {
+                type: String,
+                required: true
+            }
+        },
+        {
+            choice3: {
+                type: String,
+                required: true
+            }
+        },
+        {
+            choice4: {
+                type: String,
+                required: true
+            }
+        },
+    ],
     answer: {
         type: Number,
         required: true

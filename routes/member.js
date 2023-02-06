@@ -17,9 +17,9 @@ router.get('/', async(req, res) => {
 
 
 // create
-router.post('/add', (req, res) => {
+router.post('/add', async (req, res) => {
     try {
-        const item = Test.create(req.body)
+        const item = await Test.create(req.body)
         res.send(item)
     }catch(e) {
         console.error(e)
