@@ -27,6 +27,18 @@ router.post('/add', async (req, res) => {
 
 })
 
+// add comment 
+router.post('/add/comment/:id', async(req, res) => {
+    try{
+        const { id } = req.params
+        const item = Test.find({ id: id })
+        item.comments.push(req.body)
+
+    }catch(e) {
+
+    }
+})
+
 // read
 router.get('/:id', async (req, res) => {
 

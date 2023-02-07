@@ -16,9 +16,11 @@ app.use(express.json())
 
 // routes 
 app.use('/api/members', require('./routes/member'))
+app.use('/api/auth', require('./routes/auth'))
+app.use('/api/users', require('./routes/users'))
 
 
 
-app.listen(4000, () => {
+app.listen(4000, () => { 
     console.log('listening on 4000')
 })
