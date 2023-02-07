@@ -43,6 +43,33 @@ const questionSchema = new Schema({
     }
 })
 
+const RepliedComment = new Schema({
+    commentId: {
+        type: String,
+        required: true,
+        default: new mongoose.Types.ObjectId()
+    },
+    name: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    date: {
+        type: Date,
+        required: true,
+        default: Date.now
+    }, 
+    content: {
+        type: String,
+        required: true
+    },
+    comments: []
+
+})
+
 const CommentSchema = new Schema(
     {
         name: {
@@ -62,9 +89,12 @@ const CommentSchema = new Schema(
             type: String,
             required: true
         },
-        comments: []
+        comments: [RepliedComment]
     }
 )
+
+
+
 
 const TestSchema = new Schema(
     {
