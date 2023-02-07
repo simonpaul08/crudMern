@@ -43,6 +43,26 @@ const questionSchema = new Schema({
     }
 })
 
+const CommentSchema = new Schema(
+    {
+        name: {
+            type: String,
+            required: true
+        },
+        email: {
+            type: String,
+            required: true
+        },
+        date: {
+            type: Date,
+            required: true,
+            default: Date.now
+        }, 
+        content: "comment content goes here",
+        comments: []
+    }
+)
+
 const TestSchema = new Schema(
     {
         chapter: {
@@ -58,6 +78,7 @@ const TestSchema = new Schema(
             default: 45
         },
         questions: [questionSchema],
+        comments: [CommentSchema],
         createdAt: {
             type: Date,
             required: true,
