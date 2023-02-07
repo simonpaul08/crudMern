@@ -58,7 +58,10 @@ const CommentSchema = new Schema(
             required: true,
             default: Date.now
         }, 
-        content: "comment content goes here",
+        content: {
+            type: String,
+            required: true
+        },
         comments: []
     }
 )
