@@ -1,6 +1,6 @@
 {
   "jwtPrivateKey": "unsecureKey",
   "db": "mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority",
-  "port": "3900",
+  "port": "3910",
   "requiresAuth": true
 }

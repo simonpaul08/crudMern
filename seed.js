@@ -69,7 +69,7 @@ async function seed() {
   }
 
   //username:admin@email.com password: asdfasdf
-  await new User({name: "admin", email: "admin@email.com", password: "$2b$10$4KnNFlKWiH.HUzMF/3P/9.kcB9wSzYADkLsxqMEo30h/hJLQWipue"}).save();
+  await new User({name: "admin", email: "admin@email.com", password: "$2b$10$4KnNFlKWiH.HUzMF/3P/9.kcB9wSzYADkLsxqMEo30h/hJLQWipue", roles: [ { role: 'root', db: 'admin' } ]}).save();
   mongoose.disconnect();
 
   console.info("Done!");

@@ -304,3 +304,31 @@
 {"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-02-10T22:00:35.327Z"}
 {"level":"info","message":"Listening on port 3900...","timestamp":"2023-02-11T04:34:38.457Z"}
 {"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-11T04:34:39.251Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2023-02-11T07:55:55.531Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-11T07:55:55.916Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:08:16.220Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-11T08:08:16.778Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:08:56.557Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-11T08:08:57.406Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:11:09.307Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-11T08:11:09.813Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:21:50.854Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:22:54.039Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:27:02.197Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:27:26.398Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1:27017...","timestamp":"2023-02-11T08:27:26.414Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:31:49.984Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-11T08:31:51.470Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:36:06.665Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-11T08:36:07.143Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:40:22.351Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-11T08:40:22.917Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:48:13.215Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-11T08:48:13.987Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:48:41.002Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-11T08:48:41.974Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T08:58:23.434Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-11T08:58:24.127Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T09:02:18.763Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/test...","timestamp":"2023-02-11T09:02:19.435Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T09:03:46.831Z"}
