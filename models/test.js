@@ -6,6 +6,7 @@ const { Schema } = mongoose;
 const testSchema = new mongoose.Schema({
   chapter: { type: Schema.Types.ObjectId, ref: 'Chapter' },
   questions: [questionSchema],
+  comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
   testNum: {
     type: Number,
     min: 1,

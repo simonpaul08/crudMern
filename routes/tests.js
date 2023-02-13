@@ -90,7 +90,7 @@ router.delete("/:testId/:questionId", [auth], async (req, res) => {
 });
 
 router.get("/:id", validateObjectId, async (req, res) => {
-  const test = await Test.findById(req.params.id).populate('chapter').select("-__v");
+  const test = await Test.findById(req.params.id).populate('chapter').populate('comments').select("-__v");
 
   if (!test)
     return res.status(404).send("The test with the given ID was not found.");
