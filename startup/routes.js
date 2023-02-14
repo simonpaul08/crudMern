@@ -3,6 +3,7 @@ const users = require('../routes/users');
 const auth = require('../routes/auth');
 
 const tests = require('../routes/tests');
+const questions = require('../routes/questions');
 const comments = require('../routes/comments');
 const chapters = require('../routes/chapters');
 
@@ -14,6 +15,7 @@ module.exports = function(app) {
   app.use('/api/auth', auth);
 
   app.use('/api/tests', tests);
+  app.use('/api/questions', questions);
   app.use('/api/comments', comments);
   app.use('/api/chapters', chapters);
 

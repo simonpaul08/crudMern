@@ -35,12 +35,26 @@ function validateTest(test) {
     chapterId: Joi.objectId().allow(null, ''),
     testNum: Joi.number().min(1).required(),
     timelimit: Joi.number().min(1).required(),
-    questions: Joi.array().allow(null)
+    questions: Joi.array().allow(null),
+    comments: Joi.array().allow(null)
   };
 
   return Joi.validate(test, schema);
 }
 
+function validateQuestion(question) {
+  const schema = {
+    question: Joi.string().required(),
+    choices: Joi.array().required(),
+    answer: Joi.number().required(),
+    description: Joi.string().required(),
+    audioPath: Joi.allow(null)
+  };
+
+  return Joi.validate(question, schema);
+}
+
 exports.Test = Test;
 exports.testSchema = testSchema;
 exports.validate = validateTest;
+exports.validateQuestion = validateQuestion;

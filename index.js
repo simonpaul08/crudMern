@@ -1,7 +1,10 @@
 const winston = require("winston");
 const express = require("express");
+const fileUpload = require('express-fileupload');
 const config = require("config");
 const app = express();
+
+app.use(fileUpload());
 
 require("./startup/logging")();
 require("./startup/cors")(app);
