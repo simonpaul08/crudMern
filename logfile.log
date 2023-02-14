@@ -332,6 +332,7 @@
 {"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T09:02:18.763Z"}
 {"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/test...","timestamp":"2023-02-11T09:02:19.435Z"}
 {"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T09:03:46.831Z"}
+<<<<<<< HEAD
 {"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-13T01:37:08.494Z"}
 {"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-13T01:47:15.967Z"}
 {"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-02-13T01:47:15.998Z"}
@@ -430,3 +431,9 @@
 {"level":"info","message":"Listening on port 3900...","timestamp":"2023-02-14T03:13:22.923Z"}
 {"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2023-02-14T03:13:22.966Z"}
 {"message":"ENOENT: no such file or directory, stat 'F:\\RJS\\LifeInUK\\crudMern\\uploads142test.wav'","stack":"Error: ENOENT: no such file or directory, stat 'F:\\RJS\\LifeInUK\\crudMern\\uploads142test.wav'","errno":-4058,"code":"ENOENT","syscall":"stat","path":"F:\\RJS\\LifeInUK\\crudMern\\uploads142test.wav","expose":false,"statusCode":404,"status":404,"level":"error","timestamp":"2023-02-14T03:14:01.682Z"}
+=======
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-11T09:06:40.676Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-11T09:06:41.365Z"}
+{"level":"info","message":"Listening on port 3910...","timestamp":"2023-02-13T09:27:26.456Z"}
+{"level":"info","message":"Connected to mongodb+srv://simonpaul08:mint@lifeintheuk.asprc11.mongodb.net/?retryWrites=true&w=majority...","timestamp":"2023-02-13T09:27:30.058Z"}
+>>>>>>> 837d29c2b8262bebb3e0228529e8c7c5e3dd71b2
